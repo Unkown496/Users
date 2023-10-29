@@ -1,4 +1,5 @@
 # Немного пояснения
+
 НЕ ЗАБУДЬТЕ СКОПИРОВАТЬ .env.example в .env (Вставив свою строку для точки апи)
 
 Зачем локальная фильтрация если идет запрос на конкретного пользователя?
@@ -8,6 +9,24 @@
 ```typescript
 const filterUserByName = computed<User[]>(() => users.value.filter(user => user.name.toLowerCase().match(inputUserName.value.toLowerCase())));
 ```
+
+# Запуск проекта
+
+Не забыть скопировать файл .env.example в .env (Поставить свою точку для апи)
+
+
+```ba
+npm i
+```
+```ba
+npm run dev
+```
+Либо 
+```ba
+npm run preview
+```
+
+В консоле покажется урла
 
 # Vue 3 + TypeScript + Vite
 
